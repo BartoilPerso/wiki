@@ -48,13 +48,13 @@ setenv phyaddru 1; setenv phyaddrd 1; saveenv; reset
 #### For the hi3518ev100
 Set `phyaddru` and `phyaddrd` variables from U-Boot console:
 ```
-    setenv phyaddru 1
-    setenv phyaddrd 2
-    setenv mdio_intf rmii
-    saveenv
+setenv phyaddru 1
+setenv phyaddrd 2
+setenv mdio_intf rmii
+saveenv
 ```
 From Linux console:
 ```
-    setenv extras 'hieth.phyaddru=1 hieth.phyaddrd=2'; saveenv
+setenv extras 'hieth.phyaddru=1 hieth.phyaddrd=2'; saveenv
 ```
 If nothing of the above worked for you, seek help on [our Telegram channel](https://t.me/openipc).
